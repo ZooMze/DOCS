@@ -1,12 +1,15 @@
 <!--
  * @Author: ZooMze Zhao
  * @Date: 2020-03-20 10:23:44
- * @LastEditTime: 2020-04-17 18:54:16
+ * @LastEditTime: 2020-04-17 19:11:17
  * @LastEditors: Please set LastEditors
  * @Description: Document for GoJS(Chinese Version)
  * @FilePath: \vue-codechos-templatec:\Users\admin\Desktop\GOJS文档 by ZooMze.md
  -->
-# GOJS
+# GOJS 中文学习文档
+
+__by ZooMze__
+__LastEditTime: 2020-04-17__
 
 依赖HTML5 需要在页面中声明
 开发模式使用 `go-debug.js` 部署模式使用 `go.js`
