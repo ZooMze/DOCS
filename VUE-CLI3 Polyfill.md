@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-28 14:10:06
- * @LastEditTime: 2020-04-29 10:47:59
+ * @LastEditTime: 2020-04-29 10:55:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-codechos-templatec:\project\DOCS\VUE-CLI3 Polyfill.md
@@ -9,8 +9,10 @@
 # Vue-Cli3 set polyfill
 
 ## browserslist
-脚手架已在`package.json`配置了`browserlist`字段, 该字段制定了在哪些范围下应用ployfill
+脚手架已在`package.json`配置了`browserslist`字段, 该字段制定了在哪些范围下应用ployfill
 这个值会被 [@babel/preset-env](https://babeljs.io/docs/en/next/babel-preset-env.html) 和 [Autoprefixer](https://github.com/postcss/autoprefixer)  用来确定需要转译的 JavaScript 特性和需要添加的 CSS 浏览器前缀
+
+[browserslist 的详细配置](https://github.com/browserslist/browserslist)
 
 ## polyfill
 一个默认的 Vue CLI 项目会使用 [@vue/babel-preset-app](https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/babel-preset-app)，它通过 `@babel/preset-env` 和 `browserslist` 配置来决定项目需要的 polyfill
@@ -26,7 +28,7 @@
 1. 安装 babel/polyfill
 `npm install babel-polyfill --save`
 
-2. 在 package.json 中配置 browserlist 
+2. 在 package.json 中配置 browserslist 
 ```JavaScript
 // package.json
 "browserslist": [
@@ -36,6 +38,7 @@
 ]
 ```
 3. 配置vue.config.js
+
 详细请查阅文档[configureWebpack](https://cli.vuejs.org/zh/guide/webpack.html#%E7%AE%80%E5%8D%95%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%B9%E5%BC%8F)
 ```JavaScript
 // vue.config.js
@@ -43,7 +46,7 @@ configureWebpack: config => {
   config.entry.app = ['babel-polyfill', './src/main.js']
 },
 ```
-4. 配置 babel.config.js 为需要的检测模式
+1. 配置 babel.config.js 为需要的检测模式
 ```JavaScript
 // babel.config.js
 module.exports = {
