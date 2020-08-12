@@ -8,7 +8,7 @@
  -->
 # GOJS 中文学习文档
 
-__by 111ZooMze__
+__by ZooMze__
 __LastEditTime: 2020-04-17__
 
 依赖HTML5 需要在页面中声明
