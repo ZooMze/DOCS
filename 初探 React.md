@@ -1,6 +1,6 @@
 # React
 
-## JSX1111111111111
+## JSX
 
 `const element = <h1>Hello, world!</h1>;`
 
